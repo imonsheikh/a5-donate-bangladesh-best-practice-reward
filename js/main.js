@@ -84,23 +84,44 @@ document.getElementById('balance').innerText = remainingBalance.toFixed(2)
 }
 
 
+//toggle => best practice
+const toggleTab = (activeBtn, inactiveBtn, donationSection, historySection) => {
+document.getElementById(activeBtn).classList.remove('active')
+document.getElementById(inactiveBtn).classList.add('active')
+document.getElementById(donationSection).classList.add('hidden')
+document.getElementById(historySection).classList.remove('hidden')
+}
+
+
 //history button
 document.getElementById('show-history-btn').addEventListener('click', () => {
 
-    document.getElementById('show-donation-btn').classList.remove('active')
-    document.getElementById('show-history-btn').classList.add('active')
-    document.getElementById('donation-container').classList.add('hidden')
-    document.getElementById('history-container').classList.remove('hidden')
+    // document.getElementById('show-donation-btn').classList.remove('active')
+    // document.getElementById('show-history-btn').classList.add('active')
+    // document.getElementById('donation-container').classList.add('hidden')
+    // document.getElementById('history-container').classList.remove('hidden')
 
+    toggleTab(
+        "show-donation-btn",
+         "show-history-btn",
+         "donation-container",
+         "history-container"
+        )
 })
 
 
 //donation button
 document.getElementById('show-donation-btn').addEventListener('click', () => {
 
-    document.getElementById('show-donation-btn').classList.add('active')
-    document.getElementById('show-history-btn').classList.remove('active')
-    document.getElementById('donation-container').classList.remove('hidden')
-    document.getElementById('history-container').classList.add('hidden')
+    // document.getElementById('show-donation-btn').classList.add('active')
+    // document.getElementById('show-history-btn').classList.remove('active')
+    // document.getElementById('donation-container').classList.remove('hidden')
+    // document.getElementById('history-container').classList.add('hidden')
 
+    toggleTab(
+        "show-history-btn",
+        "show-donation-btn",
+        "history-container",
+        "donation-container"
+    )
 })
