@@ -82,3 +82,25 @@ const remainingBalance = navbarBalance - amountBalance
 document.getElementById('balance').innerText = remainingBalance.toFixed(2)
 
 }
+
+
+//history button
+document.getElementById('show-history-btn').addEventListener('click', () => {
+
+    document.getElementById('show-donation-btn').classList.remove('active')
+    document.getElementById('show-history-btn').classList.add('active')
+    document.getElementById('donation-container').classList.add('hidden')
+    document.getElementById('history-container').classList.remove('hidden')
+
+})
+
+
+//donation button
+document.getElementById('show-donation-btn').addEventListener('click', () => {
+
+    document.getElementById('show-donation-btn').classList.add('active')
+    document.getElementById('show-history-btn').classList.remove('active')
+    document.getElementById('donation-container').classList.remove('hidden')
+    document.getElementById('history-container').classList.add('hidden')
+
+})
