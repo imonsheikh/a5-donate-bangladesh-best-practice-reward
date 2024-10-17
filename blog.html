@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog || Donate Bangladesh</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      .active {
+        background-color: #b4f461;
+      }
+      .active:hover {
+        background-color: #b4f880;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-[#FDD83520] py-2">
+      <nav class="w-11/12 mx-auto py-2 flex justify-between items-center">
+        <div>
+         <a href="./index.html">
+            <button
+            id="Home-btn"
+            onclick='window.location.replace("/")'
+            class="btn bg-[#B4F461] hover:bg-[#B4F880] px-8"
+          >
+            Home
+          </button>
+         </a>
+        </div>
+        <div class="logo flex gap-2 items-center">
+          <img width="30" src="./assets/logo.png" alt="" />
+          <h2 class="text-xl font-bold hidden md:block">Donate Bangladesh</h2>
+        </div>
+        <div class="flex gap-2 items-center">
+          <img src="./assets/coin.png" alt="" />
+          <h2 class="font-semibold"><span id="balance">5500</span> BDT</h2>
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-11/12 mx-auto py-10">
+      <h2 class="font-bold text-4xl pb-10 flex gap-2 items-end">
+        Important FAQ
+        <img
+          src="https://img.icons8.com/?size=100&id=fi5C1IJfdN9W&format=gif"
+          alt=""
+        />
+      </h2>
+      <div class="join join-vertical w-full *:py-5">
+        <!-- Question 1 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>Write your answer here</p>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>Write your answer here</p>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>Write your answer here</p>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p>Write your answer here</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
